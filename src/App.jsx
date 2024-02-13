@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function App() {
-  let [myCounterState, setMyCounterState] = useState(0);
+  const [myCounterState, setMyCounterState] = useState(0);
 
   function incrementCounter() {
     setMyCounterState(myCounterState + 1);
@@ -12,7 +12,7 @@ export default function App() {
   }
 
   function reset() {
-    setMyCounterState((myCounterState = 0));
+    setMyCounterState(0);
   }
 
   return (
